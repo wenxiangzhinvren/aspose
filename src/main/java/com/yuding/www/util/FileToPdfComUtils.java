@@ -87,16 +87,16 @@ public class FileToPdfComUtils {
         boolean result = false;
         try {
             //读取license.xml
-//            InputStream license = FileToPdfComUtils.class.getClassLoader().getResourceAsStream("license.xml");
+            InputStream license = FileToPdfComUtils.class.getClassLoader().getResourceAsStream("license.xml");
             if ("words".equals(type)) {
                 com.aspose.words.License aposeLic = new com.aspose.words.License();
 //                aposeLic.setLicense(license);
             } else if ("cells".equals(type)) {
                 com.aspose.cells.License aposeLic = new com.aspose.cells.License();
-//                aposeLic.setLicense(license);
+                aposeLic.setLicense(license);
             } else if ("slides".equals(type)) {
                 com.aspose.slides.License aposeLic = new com.aspose.slides.License();
-//                aposeLic.setLicense(license);
+                aposeLic.setLicense(license);
             }
             result = true;
         } catch (Exception e) {
