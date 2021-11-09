@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js?banben=v2"></script>
+	<script type="text/javascript" src="jquery.media.js?banben=v2"></script>
+	<script type="text/javascript">  
+	    $(function() {  
+	        $('a.media').media({width:800, height:600});  
+	    });
+	    
+	    function getfile(title){
+			window.open('http://localhost:8080/file/filePreview?filePath='+encodeURIComponent(title));
+		}
+	</script>
+</head>
+<body>
+	<div class="panel-body">
+<!-- 		<a class="media" -->
+<!-- 			href="http://localhost:8080/file/filePreview?filePath=%5crealdir%5c001%5c0002%5cDM7%e6%95%b0%e6%8d%ae%e5%ba%93%e4%bc%98%e5%8c%96xls-xlsx-doc.docx-pdf-ppt.pdf">PDF -->
+<!-- 			File</a> -->
+		<a class="media" href="javascript:void(0)" onclick="getfile('测试数据.xlsx')">测试数据.xlsx</a><br/>
+		<a class="media" href="javascript:void(0)" onclick="getfile('computer.pdf')">computer.pdf</a><br/>
+		<a class="media" href="javascript:void(0)" onclick="getfile('longge.doc')">longge.doc</a><br/>
+		<a class="media" href="javascript:void(0)" onclick="getfile('会议纪要2021-08-23.docx')">会议纪要2021-08-23.docx</a>
+	</div>
+</body>
+</html>
