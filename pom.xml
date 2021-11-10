@@ -62,9 +62,9 @@
 		<dependency>
 			<groupId>aspose-words</groupId>
 			<artifactId>aspose-words</artifactId>
-			<version>16.8.0</version>
+			<version>20.12</version>
 			<scope>system</scope>
-			<systemPath>${basedir}/libs/aspose-words-16.8.0-jdk16.jar</systemPath>
+			<systemPath>${basedir}/libs/aspose-words-20.12-jdk17-cracked.jar</systemPath>
 		</dependency>
 		
 		<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
